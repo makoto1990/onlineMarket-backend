@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:sqlserver://123.206.116.122\MSSQLSERVER:1433;databaseName=onlineMarket
+        </property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password">ECUSTJ143@software</property>
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <mapping class="com.backend.adminEnd.model.CompositionEntity"/>
+        <mapping class="com.backend.adminEnd.model.GoodsEntity"/>
+        <mapping class="com.backend.adminEnd.model.OrderEntity"/>
+        <mapping class="com.backend.adminEnd.model.SellerEntity"/>
+        <mapping class="com.backend.adminEnd.model.UserEntity"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
