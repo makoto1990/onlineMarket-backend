@@ -24,19 +24,23 @@ ${sessionScope.message}
         </tr>
         <tr>
             <td colspan="2"><input type="radio" name="style" value="buy">我来买
-                <input type="radio" name="style" value="sale">我来卖 <input
-                        type="radio" name="style" value="manage">后台管理
+                <input type="radio" name="style" value="sale">我来卖
+                <input type="radio" name="style" value="manage">后台管理
             </td>
         </tr>
         <tr>
-            <td colspan="2"><input type="checkbox" name="check"
-                                   value="check"/>自动登录
+            <td colspan="2">
+                <input type="checkbox" name="check" value="check"/>自动登录
             </td>
         </tr>
         <tr>
-            <td><input type="submit" value="提交"/></td>
-            <td><input type="reset" value="重置"/><input type="button" onclick="window.location.href='register.jsp';"
-                                                       value="注册"/></td>
+            <td>
+                <input type="submit" value="提交"/>
+            </td>
+            <td>
+                <input type="reset" value="重置"/>
+                <input type="button" onclick="window.location.href='／default/register.jsp';" value="注册"/>
+            </td>
         </tr>
     </table>
 </form>
