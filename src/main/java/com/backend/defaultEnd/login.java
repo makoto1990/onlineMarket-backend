@@ -47,20 +47,20 @@ public class login extends HttpServlet {
 					i=1;
 					if (style.equals("buy")) {
 						request.getSession().setAttribute("sname", username);
-						response.sendRedirect("buy/buyMain.jsp");
+						response.sendRedirect("／WEB-INF/page/buy/buyMain.jsp");
 					} else if (style.equals("sale")) {
 						request.getSession().setAttribute("sname", username);
-						response.sendRedirect("sale/saleMain.jsp");
+						response.sendRedirect("／WEB-INF/page/sale/saleMain.jsp");
 					}
 
 					else {
 						request.getSession().setAttribute("sname", username);
-						response.sendRedirect("manage/manageMain.jsp");
+						response.sendRedirect("／WEB-INF/page/manage/manageMain.jsp");
 					}
 				}
 			}
 			if (i == 0) {
-				response.sendRedirect("error.jsp");
+				response.sendRedirect("／WEB-INF/page/default/error.jsp");
 			}
 			statement.close();
 			resultSet.close();
