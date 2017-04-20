@@ -1,14 +1,14 @@
 # onlineMarket-backend
-使用技术：java web；前端框架：bootstrap
-软件使用:jdk1.8;tomcat 9.0;eclipse;sql server数据库
-分工：主要分为买家方、卖家方、后台管理方三部分 。三组负责买家方（工作分别为：个人信息管理以及购买物品管理宣传的照片，）、二组负责卖家方、一组负责后台管理、一组负责注册与登陆的实现
-三组负责买家方,工作分别为：
-    (1)个人信息管理以及购买物品管理宣传的照片,见/src/webapp/buy/buyMain.jsp 第一部分
-    (2)按照类别搜索、按照具体东西搜索见 /src/webapp/buy/buyMain.jsp 第二部分 
-    (3)显示产品介绍，包括类别，定价等，以及进行购买  见 /src/webapp/buy/buyMain.jsp 第三部分
-二组负责卖家方,工作分别为：
-    (1)商品的管理，发布，删除，修改  见/src/webapp/sale/saleMain.jsp 第一部分
-    (2)新的订单，进行发货处理，订单查询  见/src/webapp/sale/saleMain.jsp 第一部分
+-> 使用技术：java web；前端框架：bootstrap
+-> 软件使用:jdk1.8;tomcat 9.0;eclipse;sql server数据库
+# 分工：主要分为买家方、卖家方、后台管理方三部分 。三组负责买家方（工作分别为：个人信息管理以及购买物品管理宣传的照片，）、二组负责卖家方、一组负责后台管理、一组负责注册与登陆的实现
+# 三组负责买家方,工作分别为：
+1. 个人信息管理以及购买物品管理宣传的照片,见/src/webapp/buy/buyMain.jsp 第一部分
+2. 按照类别搜索、按照具体东西搜索见 /src/webapp/buy/buyMain.jsp 第二
+3. 显示产品介绍，包括类别，定价等，以及进行购买  见 /src/webapp/buy/buyMain.jsp 第三部分
+# 二组负责卖家方,工作分别为：
+1. 商品的管理，发布，删除，修改  见/src/webapp/sale/saleMain.jsp 第一部分
+2. 新的订单，进行发货处理，订单查询  见/src/webapp/sale/saleMain.jsp 第一部分
 一组负责后台管理：
     对总的数据进行汇总
 最后一组：
