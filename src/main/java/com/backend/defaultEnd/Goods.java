@@ -5,7 +5,7 @@ public class Goods {
     private String goodsName;  //��Ʒ����
     private float goodsCount;  //�������
     private float goodsPrice; //����
-    private float storeWay; //�����д���
+    private String storeWay; //�����д���
     private String sourceArea;//ԭ����
     private String setDate;//�ϼ�ʱ��
     private String sellerID; //�̼ұ��
