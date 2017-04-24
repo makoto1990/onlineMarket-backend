@@ -98,7 +98,7 @@ public class Goods {
     {
     	return this.goodsPrice;
     }
-    float getstoreWay()
+    String getstoreWay()
     {
     	return this.storeWay;
     }
