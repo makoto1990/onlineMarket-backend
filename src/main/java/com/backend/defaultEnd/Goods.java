@@ -138,10 +138,10 @@ public class Goods {
 	public void setGoodsPrice(float goodsPrice) {
 		this.goodsPrice = goodsPrice;
 	}
-	public float getStoreWay() {
+	public String getStoreWay() {
 		return storeWay;
 	}
-	public void setStoreWay(float storeWay) {
+	public void setStoreWay(String storeWay) {
 		this.storeWay = storeWay;
 	}
 	public String getSourceArea() {
