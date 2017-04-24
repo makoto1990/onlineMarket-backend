@@ -30,7 +30,7 @@ public class Goods {
     {
     	this.goodsPrice=goodsPrice;
     }
-    void setstoreWay(float  storeWay)
+    void setstoreWay(String  storeWay)
     {
     	this.storeWay=storeWay;
     }
