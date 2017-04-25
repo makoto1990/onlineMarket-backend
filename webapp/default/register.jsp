@@ -7,7 +7,7 @@
     <title>支农网上生鲜超市</title>
 </head>
 <body>
-<form action="register.do" method="post">
+<form action="/default/register.do" method="post">
 
     用户注册：
     <table>

@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <h4 align="center">您以注册成功请返回登陆<a href="/default/index.jsp">返回登陆</a></h4>
+            <h4 align="center">您以注册成功请返回登陆<a href="/">返回登陆</a></h4>
 
         </div>
     </div>

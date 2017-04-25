@@ -8,8 +8,6 @@
 
 # BlueJ files
 *.ctxt
-/src/main/java/com/backend/adminEnd/*
-/src/main/webapp/WEB-INF/servlets/*
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 

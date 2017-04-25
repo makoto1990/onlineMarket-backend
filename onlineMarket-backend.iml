@@ -39,6 +39,20 @@
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/webapp/resources/hibernate.cfg.xml" />
       </configuration>
     </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/webapp/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -51,26 +65,6 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
-    <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
-    <orderEntry type="module-library">
-      <library name="servlet-api.jar">
-        <CLASSES>
-          <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="sqljdbc4.jar">
-        <CLASSES>
-          <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/sqljdbc4.jar" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="Spring-4.3.8.RELEASE" level="project" />
     <orderEntry type="library" name="Spring MVC-4.3.8.RELEASE" level="project" />
     <orderEntry type="library" name="Hibernate 5.2.9-5.2.9" level="project" />
