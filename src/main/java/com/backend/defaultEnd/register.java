@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 /**
  * Servlet implementation class register
  */
@@ -34,6 +35,7 @@ public class register extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -76,7 +78,7 @@ public class register extends HttpServlet {
 
 		} catch (Exception e) {
 			// TODO: handle exception
-			// if (e.toString().contains("�����û�з��ؽ����")) {
+			    if (e.toString().contains("�����û�з��ؽ����")) {
 			// request.getSession().setAttribute("message", "ע��ɹ����¼");
 			response.sendRedirect("success.jsp");
 		}
