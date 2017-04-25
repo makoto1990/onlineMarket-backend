@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class register
  */
-@WebServlet(name = "register", urlPatterns = { "/register.do" })
+@WebServlet(name = "register", urlPatterns = { "/default/register.do" })
 public class register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	static int n=1;

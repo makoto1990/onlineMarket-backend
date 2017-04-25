@@ -47,6 +47,7 @@ public class login extends HttpServlet {
 					i=1;
 					if (style.equals("buy")) {
 						request.getSession().setAttribute("sname", username);
+
 						response.sendRedirect("/buy/buyMain.jsp");
 					} else if (style.equals("sale")) {
 						request.getSession().setAttribute("sname", username);
