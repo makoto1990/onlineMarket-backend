@@ -78,9 +78,9 @@ public class register extends HttpServlet {
 
 		} catch (Exception e) {
 			// TODO: handle exception
-			    if (e.toString().contains("�����û�з��ؽ����")) {
+			    if (e.toString().contains("�����û�з��ؽ����")) 
 			// request.getSession().setAttribute("message", "ע��ɹ����¼");
-			response.sendRedirect("success.jsp");
+			       response.sendRedirect("success.jsp");
 		}
 		//
 
