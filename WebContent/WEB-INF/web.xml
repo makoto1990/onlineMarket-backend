@@ -3,7 +3,7 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
-<!--
+
     <display-name>Backend</display-name>
     <servlet>
         <servlet-name>adminEndServlet</servlet-name>
@@ -41,8 +41,8 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    -->
-    <!--
+
+
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/login/*</url-pattern>
@@ -59,26 +59,26 @@
         <servlet-name>sellerEndServlet</servlet-name>
         <url-pattern>/seller/*</url-pattern>
     </servlet-mapping>
-    -->
+
     <!-- Spring MVC 核心配置结束 -->
 
     <!--配置监听器-->
     <!-- 读取Spring配置文件；applicationContext.xml -->
-    <!--
+
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>WEB-INF/applicationContext.xml</param-value>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
     </context-param>
-    -->
+
     <!--Spring监听器 ApplicationContext 载入 -->
-    <!--
+
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
-    -->
+
 
     <!-- Spring字符集过滤器 -->
-    <!--
+
     <filter>
         <filter-name>encoding</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -92,7 +92,7 @@
         <filter-name>encoding</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    -->
+
     <welcome-file-list>
         <welcome-file>/default/index.jsp</welcome-file>
     </welcome-file-list>

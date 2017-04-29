@@ -205,11 +205,6 @@
             <artifactId>jsp-api</artifactId>
             <version>2.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>sqljdbc42</artifactId>
-            <version>6.0</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>

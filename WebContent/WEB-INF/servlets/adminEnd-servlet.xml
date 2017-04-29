@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-4.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <!-- 开启注解模式驱动 -->
+    <mvc:annotation-driven/>
+    <!-- 扫包 -->
+    <context:component-scan base-package="com.backend.adminEnd.*">
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+    <!-- 静态资源过滤 -->
+    <mvc:resources location="/resources" mapping="/resources/**"/>
+    <tx:annotation-driven transaction-manager="txManager"/>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="url" value="jdbc:sqlserver://123.206.116.122\MSSQLSERVER:1433;databaseName=onlineMarket"/>
+        <property name="username" value="sa"/>
+        <property name="password" value="ECUSTJ143@software"/>
+        <property name="maxActive" value="100"/>
+        <property name="minIdle" value="20"/>
+        <property name="maxWait" value="3000"/>
+        <property name="initialSize" value="30"/>
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>com.backend.adminEnd.model.UserEntity</value>
+                <value>com.backend.adminEnd.model.OrderEntity</value>
+                <value>com.backend.adminEnd.model.SellerEntity</value>
+                <value>com.backend.adminEnd.model.GoodsEntity</value>
+                <value>com.backend.adminEnd.model.CompositionEntity</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="dialect">org.hibernate.dialect.SQLServer2012Dialect</prop>
+                <prop key="show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="hibernateTemplateMSSQL" class="org.springframework.orm.hibernate5.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="txManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+    <!-- 视图渲染 jsp/freemaker/velocity-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 制定页面存放的路径 -->
+        <property name="prefix" value="/WEB-INF/page/admin/"/>
+        <!-- 文件的后缀 -->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean id="userDao" class="com.backend.adminEnd.dao.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="userService" class="com.backend.adminEnd.service.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="compositionDao" class="com.backend.adminEnd.dao.CompositionDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="compositionService" class="com.backend.adminEnd.service.CompositionServiceImpl">
+        <property name="compositionDao" ref="compositionDao"/>
+    </bean>
+
+    <bean id="goodsDao" class="com.backend.adminEnd.dao.GoodsDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="goodsService" class="com.backend.adminEnd.service.GoodsServiceImpl">
+        <property name="goodsDao" ref="goodsDao"/>
+    </bean>
+
+    <bean id="orderDao" class="com.backend.adminEnd.dao.OrderDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="orderService" class="com.backend.adminEnd.service.OrderServiceImpl">
+        <property name="orderDao" ref="orderDao"/>
+    </bean>
+
+    <bean id="sellerDao" class="com.backend.adminEnd.dao.SellerDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="sellerService" class="com.backend.adminEnd.service.SellerServiceImpl">
+        <property name="sellerDao" ref="sellerDao"/>
+    </bean>
+
+</beans>

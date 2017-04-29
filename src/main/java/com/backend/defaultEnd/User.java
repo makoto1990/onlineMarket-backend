@@ -16,125 +16,124 @@ public class User {
     private String Street;//	�ֵ�
     private String Address;//	��ϸ��ַ
     private int isManager;//	�Ƿ��ǹ���Ա0��ʾ���ǣ�1��ʾ��
-    void setuserID(String userID)
-    {
-    	this.userID=userID;
+
+    void setuserID(String userID) {
+        this.userID = userID;
     }
-    void setregisterDate(String registerDate)
-    {
-    	this.registerDate=registerDate;
+
+    void setregisterDate(String registerDate) {
+        this.registerDate = registerDate;
     }
-    void setuserName(String userName)
-    {
-    	this.userName=userName;
+
+    void setuserName(String userName) {
+        this.userName = userName;
     }
-    void setpassword(String password)
-    {
-    	this.password=password;
+
+    void setpassword(String password) {
+        this.password = password;
     }
-    void setrealName(String realName)
-    {
-    	this.realName=realName;
+
+    void setrealName(String realName) {
+        this.realName = realName;
     }
-    void setIDnumber(String IDnumber)
-    {
-    	this.IDnumber=IDnumber;
+
+    void setIDnumber(String IDnumber) {
+        this.IDnumber = IDnumber;
     }
-    void setPhone(String Phone)
-    {
-    	this.Phone=Phone;
+
+    void setPhone(String Phone) {
+        this.Phone = Phone;
     }
-    void setuserStatus(String userStatus)
-    {
-    	this.userStatus=userStatus;
+
+    void setuserStatus(String userStatus) {
+        this.userStatus = userStatus;
     }
-    void setPostcode(String Postcode)
-    {
-    	this.Postcode=Postcode;
+
+    void setPostcode(String Postcode) {
+        this.Postcode = Postcode;
     }
-    void setProvince(String Province)
-    {
-    	this.Province=Province;
+
+    void setProvince(String Province) {
+        this.Province = Province;
     }
-    void setCity(String City)
-    {
-    	this.City=City;
+
+    void setCity(String City) {
+        this.City = City;
     }
-    void setDistrict(String District)
-    {
-    	this.District=District;
+
+    void setDistrict(String District) {
+        this.District = District;
     }
-    
-    void setStreet(String Street)
-    {
-    	this.Street=Street;
+
+    void setStreet(String Street) {
+        this.Street = Street;
     }
-    void setAddress(String Address)
-    {
-    	this.Address=Address;
+
+    void setAddress(String Address) {
+        this.Address = Address;
     }
-    void setisManager(int isManager)
-    {
-    	this.isManager=isManager;
+
+    void setisManager(int isManager) {
+        this.isManager = isManager;
     }
-    String getuserID()
-    {
-    	return this.userID;
+
+    String getuserID() {
+        return this.userID;
     }
-    String getregisterDate()
-    {
-    	return this.registerDate;
+
+    String getregisterDate() {
+        return this.registerDate;
     }
-    String getuserName()
-    {
-    	return this.userName;
+
+    String getuserName() {
+        return this.userName;
     }
-    String getpassword()
-    {
-    	return this.password;
+
+    String getpassword() {
+        return this.password;
     }
-    String getrealName()
-    {
-    	return this.realName;
+
+    String getrealName() {
+        return this.realName;
     }
-    String getIDnumber()
-    {
-    	return this.IDnumber;
+
+    String getIDnumber() {
+        return this.IDnumber;
     }
-    String getPhone()
-    {
-    	return this.Phone;
+
+    String getPhone() {
+        return this.Phone;
     }
-    String getuserStatus()
-    {
-    	return this.userStatus;
+
+    String getuserStatus() {
+        return this.userStatus;
     }
-    String getPostcode()
-    {
-    	return this.Postcode;
+
+    String getPostcode() {
+        return this.Postcode;
     }
-    String getProvince()
-    {
-    	return this.Province;
+
+    String getProvince() {
+        return this.Province;
     }
-    String getCity()
-    {
-    	return this.City;
+
+    String getCity() {
+        return this.City;
     }
-    String getDistrict()
-    {
-    	return this.District;
+
+    String getDistrict() {
+        return this.District;
     }
-    String getStreet()
-    {
-    	return this.Street;
+
+    String getStreet() {
+        return this.Street;
     }
-    String getAddress()
-    {
-    	return this.Address;
+
+    String getAddress() {
+        return this.Address;
     }
-    int getisManager()
-    {
-    	return this.isManager;
+
+    int getisManager() {
+        return this.isManager;
     }
 }

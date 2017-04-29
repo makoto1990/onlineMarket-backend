@@ -14,180 +14,205 @@ public class Goods {
     private float largeAmount;//�����ɹ�������
     private float largePrice;//�����ɹ���
     private String Picture; //��ƷͼƬ
-    void setgoodsID(String  goodsID)
-    {
-    	this.goodsID=goodsID;
+
+    void setgoodsID(String goodsID) {
+        this.goodsID = goodsID;
     }
-    void setgoodsName(String  goodsName)
-    {
-    	this.goodsName=goodsName;
+
+    void setgoodsName(String goodsName) {
+        this.goodsName = goodsName;
     }
-    void setgoodsCount(float  goodsCount)
-    {
-    	this.goodsCount=goodsCount;
-    } 
-    void setgoodsPrice(float  goodsPrice)
-    {
-    	this.goodsPrice=goodsPrice;
+
+    void setgoodsCount(float goodsCount) {
+        this.goodsCount = goodsCount;
     }
-    void setstoreWay(String  storeWay)
-    {
-    	this.storeWay=storeWay;
+
+    void setgoodsPrice(float goodsPrice) {
+        this.goodsPrice = goodsPrice;
     }
-    void setsourceArea(String  sourceArea)
-    {
-    	this.sourceArea=sourceArea;
+
+    void setstoreWay(String storeWay) {
+        this.storeWay = storeWay;
     }
-    void setsetDate(String  setDate)
-    {
-    	this.setDate=setDate;
+
+    void setsourceArea(String sourceArea) {
+        this.sourceArea = sourceArea;
     }
-    void setsellerID(String  sellerID)
-    {
-    	this.sellerID=sellerID;
+
+    void setsetDate(String setDate) {
+        this.setDate = setDate;
     }
-    void setgoodsType(String  goodsType)
-    {
-    	this.goodsType=goodsType;
+
+    void setsellerID(String sellerID) {
+        this.sellerID = sellerID;
     }
-    void setleastAmount(float  leastAmount)
-    {
-    	this.leastAmount=leastAmount;
+
+    void setgoodsType(String goodsType) {
+        this.goodsType = goodsType;
     }
-    void setlargeAmount(float  largeAmount)
-    {
-    	this.largeAmount=largeAmount;
+
+    void setleastAmount(float leastAmount) {
+        this.leastAmount = leastAmount;
     }
-    void setlargePrice(float  largePrice)
-    {
-    	this.largePrice=largePrice;
+
+    void setlargeAmount(float largeAmount) {
+        this.largeAmount = largeAmount;
     }
-    String getgoodsID()
-    {
-    	return this.goodsID;
+
+    void setlargePrice(float largePrice) {
+        this.largePrice = largePrice;
     }
-    String getgoodsName()
-    {
-    	return this.goodsName;
+
+    String getgoodsID() {
+        return this.goodsID;
     }
-    String getsourceArea()
-    {
-    	return this.sourceArea;
+
+    String getgoodsName() {
+        return this.goodsName;
     }
-    String getsetDate()
-    {
-    	return this.setDate;
+
+    String getsourceArea() {
+        return this.sourceArea;
     }
-    String getsellerID()
-    {
-    	return this.sellerID;
+
+    String getsetDate() {
+        return this.setDate;
     }
-    String getgoodsType()
-    {
-    	return this.goodsType;
+
+    String getsellerID() {
+        return this.sellerID;
     }
-    String getPicture()
-    {
-    	return this.Picture;
+
+    String getgoodsType() {
+        return this.goodsType;
     }
-    float getgoodsCount()
-    {
-    	return this.goodsCount;
+
+    String getPicture() {
+        return this.Picture;
     }
-    float getgoodsPrice()
-    {
-    	return this.goodsPrice;
+
+    float getgoodsCount() {
+        return this.goodsCount;
     }
-    String getstoreWay()
-    {
-    	return this.storeWay;
+
+    float getgoodsPrice() {
+        return this.goodsPrice;
     }
-    float getleastAmount()
-    {
-    	return this.leastAmount;
+
+    String getstoreWay() {
+        return this.storeWay;
     }
-    float getlargeAmount()
-    {
-    	return this.largeAmount;
+
+    float getleastAmount() {
+        return this.leastAmount;
     }
-    float getlargePrice()
-    {
-    	return this.largePrice;
+
+    float getlargeAmount() {
+        return this.largeAmount;
     }
-	public String getGoodsID() {
-		return goodsID;
-	}
-	public void setGoodsID(String goodsID) {
-		this.goodsID = goodsID;
-	}
-	public String getGoodsName() {
-		return goodsName;
-	}
-	public void setGoodsName(String goodsName) {
-		this.goodsName = goodsName;
-	}
-	public float getGoodsCount() {
-		return goodsCount;
-	}
-	public void setGoodsCount(float goodsCount) {
-		this.goodsCount = goodsCount;
-	}
-	public float getGoodsPrice() {
-		return goodsPrice;
-	}
-	public void setGoodsPrice(float goodsPrice) {
-		this.goodsPrice = goodsPrice;
-	}
-	public String getStoreWay() {
-		return storeWay;
-	}
-	public void setStoreWay(String storeWay) {
-		this.storeWay = storeWay;
-	}
-	public String getSourceArea() {
-		return sourceArea;
-	}
-	public void setSourceArea(String sourceArea) {
-		this.sourceArea = sourceArea;
-	}
-	public String getSetDate() {
-		return setDate;
-	}
-	public void setSetDate(String setDate) {
-		this.setDate = setDate;
-	}
-	public String getSellerID() {
-		return sellerID;
-	}
-	public void setSellerID(String sellerID) {
-		this.sellerID = sellerID;
-	}
-	public String getGoodsType() {
-		return goodsType;
-	}
-	public void setGoodsType(String goodsType) {
-		this.goodsType = goodsType;
-	}
-	public float getLeastAmount() {
-		return leastAmount;
-	}
-	public void setLeastAmount(float leastAmount) {
-		this.leastAmount = leastAmount;
-	}
-	public float getLargeAmount() {
-		return largeAmount;
-	}
-	public void setLargeAmount(float largeAmount) {
-		this.largeAmount = largeAmount;
-	}
-	public float getLargePrice() {
-		return largePrice;
-	}
-	public void setLargePrice(float largePrice) {
-		this.largePrice = largePrice;
-	}
-	public void setPicture(String picture) {
-		Picture = picture;
-	}
-    
+
+    float getlargePrice() {
+        return this.largePrice;
+    }
+
+    public String getGoodsID() {
+        return goodsID;
+    }
+
+    public void setGoodsID(String goodsID) {
+        this.goodsID = goodsID;
+    }
+
+    public String getGoodsName() {
+        return goodsName;
+    }
+
+    public void setGoodsName(String goodsName) {
+        this.goodsName = goodsName;
+    }
+
+    public float getGoodsCount() {
+        return goodsCount;
+    }
+
+    public void setGoodsCount(float goodsCount) {
+        this.goodsCount = goodsCount;
+    }
+
+    public float getGoodsPrice() {
+        return goodsPrice;
+    }
+
+    public void setGoodsPrice(float goodsPrice) {
+        this.goodsPrice = goodsPrice;
+    }
+
+    public String getStoreWay() {
+        return storeWay;
+    }
+
+    public void setStoreWay(String storeWay) {
+        this.storeWay = storeWay;
+    }
+
+    public String getSourceArea() {
+        return sourceArea;
+    }
+
+    public void setSourceArea(String sourceArea) {
+        this.sourceArea = sourceArea;
+    }
+
+    public String getSetDate() {
+        return setDate;
+    }
+
+    public void setSetDate(String setDate) {
+        this.setDate = setDate;
+    }
+
+    public String getSellerID() {
+        return sellerID;
+    }
+
+    public void setSellerID(String sellerID) {
+        this.sellerID = sellerID;
+    }
+
+    public String getGoodsType() {
+        return goodsType;
+    }
+
+    public void setGoodsType(String goodsType) {
+        this.goodsType = goodsType;
+    }
+
+    public float getLeastAmount() {
+        return leastAmount;
+    }
+
+    public void setLeastAmount(float leastAmount) {
+        this.leastAmount = leastAmount;
+    }
+
+    public float getLargeAmount() {
+        return largeAmount;
+    }
+
+    public void setLargeAmount(float largeAmount) {
+        this.largeAmount = largeAmount;
+    }
+
+    public float getLargePrice() {
+        return largePrice;
+    }
+
+    public void setLargePrice(float largePrice) {
+        this.largePrice = largePrice;
+    }
+
+    public void setPicture(String picture) {
+        Picture = picture;
+    }
+
 }

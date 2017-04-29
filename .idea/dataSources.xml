@@ -7,5 +7,21 @@
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
       <jdbc-url>jdbc:sqlserver://123.206.116.122\MSSQLSERVER:1433;databaseName=onlineMarket</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="b267d7cf-f53f-4358-9194-a875d178729a">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/webapp/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://123.206.116.122\MSSQLSERVER:1433;databaseName=onlineMarket</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="src:main:webapp:resources:hibernate.cfg.xml/Hibernate" uuid="2656c392-d06d-4d85-8a33-ea95cda50c7c">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/src/main/webapp/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://123.206.116.122\MSSQLSERVER:1433;databaseName=onlineMarket</jdbc-url>
+    </data-source>
   </component>
 </project>
