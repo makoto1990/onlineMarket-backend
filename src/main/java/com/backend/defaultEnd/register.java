@@ -1,9 +1,11 @@
-package com.backend.defaultEnd;
+package com.demo.supermarket;
 
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -13,11 +15,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 /**
  * Servlet implementation class register
  */
-@WebServlet(name = "register", urlPatterns = { "/default/register.do" })
+@WebServlet(name = "register", urlPatterns = { "/register.do" })
 public class register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	static int n=1;
@@ -35,7 +36,6 @@ public class register extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -56,20 +56,39 @@ public class register extends HttpServlet {
 		}
 			
 		// dateNowStr.replaceAll("-", "");
-		//System.out.println("��ʽ��������ڣ�" + dateNowStr);
+		//System.out.println("格式化后的日期：" + dateNowStr);
 		// Statement statement = null;
-
 		Dao dao = new Dao();
+		try {
+			
+			Class.forName(dao.getJdString());
+			connection = DriverManager.getConnection(dao.getUrl(), dao.getUsname(), dao.getPassword());
+			String sql = "select top 1 userID from [User] order by userID desc";
+			Statement statement = connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(sql);
+			while (resultSet.next()) {
+				 n =Integer.parseInt((resultSet.getString("userID").substring(8, resultSet.getString("userID").length())).trim());
+			}
+		   	
+			statement.close();
+			resultSet.close();
+			connection.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+
+		n++;
 		try {
 			Class.forName(dao.getJdString());
 			connection = DriverManager.getConnection(dao.getUrl(), dao.getUsname(), dao.getPassword());
-            String userid = dateNowStr+n++;
-			String sql = "insert into [User](userID,userName,password) values (?,?,?)";
+            String userid = dateNowStr+n;
+			String sql = "insert into [User](userID,userName,password,registerDate) values (?,?,?,?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, userid);
 			preparedStatement.setString(2, username);
 			preparedStatement.setString(3, password);
-
+            preparedStatement.setString(4, dateNowStr);
 			preparedStatement.executeQuery();
 			// if(result.next()){}
 
@@ -78,9 +97,12 @@ public class register extends HttpServlet {
 
 		} catch (Exception e) {
 			// TODO: handle exception
-			    if (e.toString().contains("�����û�з��ؽ����")) 
-			// request.getSession().setAttribute("message", "ע��ɹ����¼");
-			       response.sendRedirect("success.jsp");
+			//e.printStackTrace();
+			 if (e.toString().contains("该语句没有返回结果集")) 
+			 {
+			    request.getSession().setAttribute("message", "success");
+			    response.sendRedirect("success.jsp");
+			 }
 		}
 		//
 
@@ -97,3 +119,4 @@ public class register extends HttpServlet {
 	}
 
 }
+
