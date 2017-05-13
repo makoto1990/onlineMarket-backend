@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-29 9:38:50 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="main.java.com.backend.buyerEnd.model.User" table="USER">
+        <id name="userID" type="java.lang.String" access="field">
+            <column name="USERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="registerDate" type="java.util.Date" access="field">
+            <column name="REGISTERDATE" />
+        </property>
+        <property name="userName" type="java.lang.String" access="field">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String" access="field">
+            <column name="PASSWORD" />
+        </property>
+        <property name="realName" type="java.lang.String" access="field">
+            <column name="REALNAME" />
+        </property>
+        <property name="IDnumber" type="java.lang.String">
+            <column name="IDNUMBER" />
+        </property>
+        <property name="Phone" type="java.lang.String">
+            <column name="PHONE" />
+        </property>
+        <property name="userStatus" type="java.lang.String" access="field">
+            <column name="USERSTATUS" />
+        </property>
+        <property name="Postcode" type="java.lang.String" access="field">
+            <column name="POSTCODE" />
+        </property>
+        <property name="Province" type="java.lang.String">
+            <column name="PROVINCE" />
+        </property>
+        <property name="City" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="District" type="java.lang.String">
+            <column name="DISTRICT" />
+        </property>
+        <property name="Street" type="java.lang.String">
+            <column name="STREET" />
+        </property>
+        <property name="Address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="isManager" type="byte" access="field">
+            <column name="ISMANAGER" />
+        </property>
+    </class>
+</hibernate-mapping>

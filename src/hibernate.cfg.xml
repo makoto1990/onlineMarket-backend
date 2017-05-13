@@ -1,0 +1,20 @@
+<?xml version="1.0"?> 
+
+<!DOCTYPE hibernate-configuration PUBLIC  
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+    <session-factory >  
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>  
+        <property name="hibernate.connection.url">jdbc:sqlserver://123.206.116.122:1433</property>  
+        <property name="hibernate.connection.username">sa</property>  
+        <property name="hibernate.connection.password">ECUSTJ143@software</property>  
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>  
+        <mapping resource="main/java/com/backend/buyerEnd/model/Goods.hbm.xml"/> 
+        <mapping resource="main/java/com/backend/buyerEnd/model/Seller.hbm.xml"/> 
+    </session-factory>  
+</hibernate-configuration> 
+
+
+

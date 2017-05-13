@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-29 8:55:32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="main.java.com.backend.buyerEnd.model.Seller" table="SELLER">
+        <id name="sellerID" type="java.lang.String">
+            <column name="SELLERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="registerDate" type="java.lang.String">
+            <column name="REGISTERDATE" />
+        </property>
+        <property name="userID" type="java.lang.String">
+            <column name="USERID" />
+        </property>
+        <property name="sellerIntro" type="java.lang.String">
+            <column name="SELLERINTRO" />
+        </property>
+    </class>
+</hibernate-mapping>

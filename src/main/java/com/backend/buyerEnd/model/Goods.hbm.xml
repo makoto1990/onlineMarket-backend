@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-29 8:55:32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="main.java.com.backend.buyerEnd.model.Goods" table="GOODS">
+        <id name="goodsID" type="java.lang.String">
+            <column name="GOODSID" />
+            <generator class="assigned" />
+        </id>
+        <property name="goodsName" type="java.lang.String">
+            <column name="GOODSNAME" />
+        </property>
+        <property name="goodsIntro" type="java.lang.String">
+            <column name="GOODSINTRO" />
+        </property>        
+        <property name="goodsSize" type="java.lang.String">
+            <column name="GOODSSIZE" />
+        </property>
+        <property name="goodsCount" type="int">
+            <column name="GOODSCOUNT" />
+        </property>
+        <property name="goodsPrice" type="float">
+            <column name="GOODSPRICE" />
+        </property>
+        <property name="storeWay" type="java.lang.String">
+            <column name="STOREWAY" />
+        </property>
+        <property name="sourceArea" type="java.lang.String">
+            <column name="SOURCEAREA" />
+        </property>
+        <property name="setDate" type="java.lang.String">
+            <column name="SETDATE" />
+        </property>
+        <property name="sellerID" type="java.lang.String">
+            <column name="SELLERID" />
+        </property>
+        <property name="goodsType" type="java.lang.String">
+            <column name="GOODSTYPE" />
+        </property>
+        <property name="leastAmount" type="float">
+            <column name="LEASTAMOUNT" />
+        </property>
+        <property name="largeAmount" type="float">
+            <column name="LARGEAMOUNT" />
+        </property>
+        <property name="largePrice" type="float">
+            <column name="LARGEPRICE" />
+        </property>
+        <property name="Picture" type="java.lang.String">
+            <column name="PICTURE" />
+        </property>
+    </class>
+</hibernate-mapping>
