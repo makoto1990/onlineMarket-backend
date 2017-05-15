@@ -31,25 +31,25 @@ public class AlterServlet extends HttpServlet {
 		boolean relogin = false;
 		boolean resure = false;
 		User user = (User)request.getSession().getAttribute("user");
-		String username = request.getParameter("username");//ÓÃ»§êÇ³Æ
-		String password = request.getParameter("password");//ÃÜÂë
-		String password2 = request.getParameter("password2");//È·ÈÏÃÜÂë
-		String realname = request.getParameter("realname");//ÕæÊµĞÕÃû
-		String idnumber = request.getParameter("idnumber");//Éí·İÖ¤ºÅ
-		String phone = request.getParameter("phone");//ÁªÏµµç»°
-		String postcode = request.getParameter("postcode");//ÓÊ±à
-		String province = request.getParameter("province");//Ê¡
-		String city = request.getParameter("city");//ÊĞ
-		String district = request.getParameter("district");//Çø/ÏØ
-		String street = request.getParameter("street");//½ÖµÀ
-		String address = request.getParameter("address");//µØÖ·
+		String username = request.getParameter("username");//ç”¨æˆ·æ˜µç§°
+		String password = request.getParameter("password");//å¯†ç 
+		String password2 = request.getParameter("password2");//ç¡®è®¤å¯†ç 
+		String realname = request.getParameter("realname");//çœŸå®å§“å
+		String idnumber = request.getParameter("idnumber");//èº«ä»½è¯å·
+		String phone = request.getParameter("phone");//è”ç³»ç”µè¯
+		String postcode = request.getParameter("postcode");//é‚®ç¼–
+		String province = request.getParameter("province");//çœ
+		String city = request.getParameter("city");//å¸‚
+		String district = request.getParameter("district");//åŒº/å¿
+		String street = request.getParameter("street");//è¡—é“
+		String address = request.getParameter("address");//åœ°å€
 		
-		if(!username.equals("")){ user.setuserName(username); relogin=true; }//ĞŞ¸ÄêÇ³Æ£¬ĞèÖØĞÂµÇÂ¼
+		if(!username.equals("")){ user.setuserName(username); relogin=true; }//ä¿®æ”¹æ˜µç§°ï¼Œéœ€é‡æ–°ç™»å½•
 		if(!password.equals(password2)){
-			//System.out.println("Á½´ÎÊäÈë²»Ò»ÖÂ");
+			//System.out.println("ä¸¤æ¬¡è¾“å…¥ä¸ä¸€è‡´");
 			resure = true;
 		}
-		else if(!password.equals("")){ user.setpassword(password); relogin=true; }//ĞŞ¸ÄÃÜÂë£¬ĞèÖØĞÂµÇÂ¼
+		else if(!password.equals("")){ user.setpassword(password); relogin=true; }//ä¿®æ”¹å¯†ç ï¼Œéœ€é‡æ–°ç™»å½•
 		if(!realname.equals(""))user.setrealName(realname);
 		if(!idnumber.equals(""))user.setIDnumber(idnumber);
 		if(!phone.equals(""))user.setPhone(phone);

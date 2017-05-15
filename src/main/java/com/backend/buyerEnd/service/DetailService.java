@@ -10,7 +10,7 @@ public class DetailService {
 	
     public static Goods getGoodsByGoodsId(String goodsId){
     	Goods goods = null;
-    	//读取配置文件  
+    	//璇诲彇閰嶇疆鏂囦欢  
         Configuration cfg = new Configuration().configure();       
         SessionFactory factory = cfg.buildSessionFactory();  
         Session session = null;  
@@ -34,7 +34,7 @@ public class DetailService {
     
     public static Seller getSellerBySellerId(String sellerID){
     	Seller seller = null;
-    	//读取配置文件  
+    	//璇诲彇閰嶇疆鏂囦欢  
         Configuration cfg = new Configuration().configure();       
         SessionFactory factory = cfg.buildSessionFactory();  
         Session session = null;  

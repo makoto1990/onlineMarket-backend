@@ -10,13 +10,13 @@ import org.hibernate.cfg.Configuration;
 public class GoodsService {  
 	ArrayList<Goods> allGoods=new ArrayList<>();
     public ArrayList<Goods> loadAllGoods() {  
-        //¶ÁÈ¡ÅäÖÃÎÄ¼ş  
+        //è¯»å–é…ç½®æ–‡ä»¶  
         Configuration cfg = new Configuration().configure();       
         SessionFactory factory = cfg.buildSessionFactory();  
         Session session = null;  
         try{  
             session = factory.openSession();  
-            //¿ªÆôÊÂÎñ  
+            //å¼€å¯äº‹åŠ¡  
             session.beginTransaction();  
            
             SQLQuery query = session.createSQLQuery("select * from [onlineMarket].[dbo].[Goods]");
@@ -27,17 +27,17 @@ public class GoodsService {
             	allGoods.add(goods);
             }
 
-            //Ìá½»ÊÂÎñ  
+            //æäº¤äº‹åŠ¡  
             session.getTransaction().commit();  
             
         }catch(Exception e){  
             e.printStackTrace();  
-            //»Ø¹öÊÂÎñ  
+            //å›æ»šäº‹åŠ¡  
             session.getTransaction().rollback();  
         }finally{  
             if(session != null){  
                 if(session.isOpen()){  
-                    //¹Ø±Õsession  
+                    //å…³é—­session  
                     session.close();  
                 }  
             }  

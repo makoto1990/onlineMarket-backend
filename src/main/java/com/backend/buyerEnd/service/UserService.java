@@ -11,7 +11,7 @@ import org.hibernate.cfg.Configuration;
 public class UserService {
 	ArrayList<User> allUser = new ArrayList<>();
 	public ArrayList<User> loadAllUser(){
-		//读取配置文件
+		//璇诲彇閰嶇疆鏂囦欢
 		Configuration cfg = new Configuration().configure();
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = null;
@@ -29,7 +29,7 @@ public class UserService {
 			
 		}catch(Exception e){
 			e.printStackTrace();
-			//回滚
+			//鍥炴粴
 			session.getTransaction().rollback();
 		}finally{
 			if(session != null){
