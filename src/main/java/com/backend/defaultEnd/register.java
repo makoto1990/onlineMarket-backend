@@ -82,7 +82,16 @@ public class register extends HttpServlet {
 		try {
 			Class.forName(dao.getJdString());
 			connection = DriverManager.getConnection(dao.getUrl(), dao.getUsname(), dao.getPassword());
-            String userid = dateNowStr+n;
+                        //String userid = dateNowStr+n;
+			String userid=dateNowStr;
+			if(Integer.toString(n).length()==1)
+				userid+="000";
+			else if(Integer.toString(n).length()==2)
+				userid+="00";
+			else if(Integer.toString(n).length()==3)
+				userid+="0";
+			else userid+="";
+                        userid += n;
 			String sql = "insert into [User](userID,userName,password,registerDate) values (?,?,?,?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, userid);
