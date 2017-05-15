@@ -51,7 +51,7 @@ public class User {
 	{
 		this.userStatus=userStatus;
 	}
-	public void setuPostcode(String Postcode)
+	public void setPostcode(String Postcode)
 	{
 		this.Postcode=Postcode;
 	}
@@ -161,5 +161,9 @@ public class User {
     	this.Street=Street;
     	this.Address=Address;
     	this.isManager=isManager;
+    }
+    public User()
+    {
+    	
     }
 }

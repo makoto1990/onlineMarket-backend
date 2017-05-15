@@ -62,7 +62,7 @@
 			
     <div class="row">
     	<jsp:useBean id="allgoods" class="main.java.com.backend.buyerEnd.search.SearchBean" />
-	    	<% 	ArrayList<Goods> allGoods=new ArrayList<>();
+	    	<% 	ArrayList<Goods> allGoods=new ArrayList<Goods>();
 	    		allgoods.setSearchType(3);
 	    		allgoods.setSearchinfo("123");
 	    		allGoods=allgoods.loadAllGoods();

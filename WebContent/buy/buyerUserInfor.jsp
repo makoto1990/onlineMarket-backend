@@ -24,6 +24,8 @@
      		List<User> list = dao.getUserByUserName(name);
      		for(User u1:list)
      		{%>
+     		<li class="navbar-middle"><a href="userInforAlter.jsp">修改信息<% request.getSession().setAttribute("user", u1); %></a></li>
+ 
      		<div class="form-group">
         		<label class="col-sm-5 control-label">用户ID</label>
         		<div class="col-sm-7">

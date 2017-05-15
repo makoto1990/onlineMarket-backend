@@ -23,9 +23,6 @@
                         </ul>
                         </td>
                     </tr>
-                    <tr>
-                        <td>一排宣传的照片</td>
-                    </tr>
                 </table>
             </div>
         </div>
