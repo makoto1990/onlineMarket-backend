@@ -1,5 +1,5 @@
-package main.java.com.backend.buyerEnd.service;
-import main.java.com.backend.buyerEnd.model.Goods;
+package com.backend.buyerEnd.service;
+import com.backend.buyerEnd.model.Goods;
 
 import java.util.ArrayList;
 import org.hibernate.SQLQuery;

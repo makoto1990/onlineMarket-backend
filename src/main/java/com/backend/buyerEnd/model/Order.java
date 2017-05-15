@@ -1,24 +1,24 @@
-package main.java.com.backend.buyerEnd.model;
+package  com.backend.buyerEnd.model;
 
 public class Order {
-     private String orderID;//¶©µ¥±àºÅ
-     private String receiverName;//ÊÕ»õÈËÐÕÃû
-     private String Phone;//ÁªÏµ·½Ê½
-     private String orderStatus;//¶©µ¥×´Ì¬
-     private String payTime;//¸¶¿îÊ±¼ä
-     private String deliveryTime;//·¢»õÊ±¼ä
-     private String confirmTime;//È·ÈÏ/È¡ÏûÊ±¼ä
-     private String Postcode;//ÓÊ±à
-     private String Province;//Ê¡·Ý
-     private String City;//³ÇÊÐ
-     private String District;//ÇøÏØ
-     private String Street;//½ÖµÀ
-     private String Address;//ÏêÏ¸µØÖ·
-     private String creatTime;//´´½¨Ê±¼ä
-     private String userID;//ÓÃ»§±àºÅ
-     private String sellerID;//Âô¼Ò±àºÅ
-     private float shipCost;//ÔË·Ñ
-     private float allPrice;//ÉÌÆ·×Ü¼Û
+     private String orderID;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     private String receiverName;//ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     private String Phone;//ï¿½ï¿½Ïµï¿½ï¿½Ê½
+     private String orderStatus;//ï¿½ï¿½ï¿½ï¿½×´Ì¬
+     private String payTime;//ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+     private String deliveryTime;//ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+     private String confirmTime;//È·ï¿½ï¿½/È¡ï¿½ï¿½Ê±ï¿½ï¿½
+     private String Postcode;//ï¿½Ê±ï¿½
+     private String Province;//Ê¡ï¿½ï¿½
+     private String City;//ï¿½ï¿½ï¿½ï¿½
+     private String District;//ï¿½ï¿½ï¿½ï¿½
+     private String Street;//ï¿½Öµï¿½
+     private String Address;//ï¿½ï¿½Ï¸ï¿½ï¿½Ö·
+     private String creatTime;//ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+     private String userID;//ï¿½Ã»ï¿½ï¿½ï¿½ï¿½
+     private String sellerID;//ï¿½ï¿½ï¿½Ò±ï¿½ï¿½
+     private float shipCost;//ï¿½Ë·ï¿½
+     private float allPrice;//ï¿½ï¿½Æ·ï¿½Ü¼ï¿½
      
      public void setorderID(String orderID)
      {

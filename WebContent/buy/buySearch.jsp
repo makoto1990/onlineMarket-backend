@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" import="main.java.com.backend.buyerEnd.model.*"
+<%@ page language="java" contentType="text/html; charset=utf-8" import=" com.backend.buyerEnd.model.*"
 import="java.util.*" pageEncoding="utf-8" %>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -22,7 +22,7 @@ import="java.util.*" pageEncoding="utf-8" %>
     <!-- 商品展示 -->
     
     <div class="row">
-    	<jsp:useBean id="allgoods" class="main.java.com.backend.buyerEnd.search.SearchBean" />   
+    	<jsp:useBean id="allgoods" class=" com.backend.buyerEnd.search.SearchBean" />
 			<jsp:setProperty name="allgoods" property="*"/>								
 		    	<% 			    
 		   		 	String index=(String)request.getParameter("index");

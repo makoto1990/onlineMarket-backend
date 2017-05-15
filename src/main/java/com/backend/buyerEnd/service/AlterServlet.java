@@ -1,4 +1,4 @@
-package main.java.com.backend.buyerEnd.service;
+package com.backend.buyerEnd.service;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import main.java.com.backend.buyerEnd.dao.UserDao;
-import main.java.com.backend.buyerEnd.model.User;
+import com.backend.buyerEnd.dao.UserDao;
+import com.backend.buyerEnd.model.User;
 
 public class AlterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

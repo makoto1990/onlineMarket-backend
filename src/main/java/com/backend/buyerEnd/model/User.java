@@ -1,23 +1,23 @@
-package main.java.com.backend.buyerEnd.model;
+package  com.backend.buyerEnd.model;
 
 import java.sql.Date;
 
 public class User {
-	private String userID;//ÓÃ»§±àºÅ
-	private Date registerDate;//×¢²áÊ±¼ä
-	private String userName;//ÓÃ»§êÇ³Æ
-	private String password;//ÓÃ»§ÃÜÂë
-	private String realName;//ÕæÊµÐÕÃû
-	private String IDnumber;//Éí·ÝÖ¤ºÅ
-	private String Phone;//ÁªÏµµç»°
-	private String userStatus;//ÓÃ»§×´Ì¬
-	private String Postcode;//ÓÊ±à
-	private String Province;//Ê¡·Ý
-	private String City;//³ÇÊÐ
-	private String District;//ÇøÏØ
-	private String Street;//½ÖµÀ
-	private String Address;//ÏêÏ¸µØÖ·
-	private int isManager;//ÊÇ·ñÊÇ¹ÜÀíÔ±
+	private String userID;//ï¿½Ã»ï¿½ï¿½ï¿½ï¿½
+	private Date registerDate;//×¢ï¿½ï¿½Ê±ï¿½ï¿½
+	private String userName;//ï¿½Ã»ï¿½ï¿½Ç³ï¿½
+	private String password;//ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String realName;//ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½
+	private String IDnumber;//ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½
+	private String Phone;//ï¿½ï¿½Ïµï¿½ç»°
+	private String userStatus;//ï¿½Ã»ï¿½×´Ì¬
+	private String Postcode;//ï¿½Ê±ï¿½
+	private String Province;//Ê¡ï¿½ï¿½
+	private String City;//ï¿½ï¿½ï¿½ï¿½
+	private String District;//ï¿½ï¿½ï¿½ï¿½
+	private String Street;//ï¿½Öµï¿½
+	private String Address;//ï¿½ï¿½Ï¸ï¿½ï¿½Ö·
+	private int isManager;//ï¿½Ç·ï¿½ï¿½Ç¹ï¿½ï¿½ï¿½Ô±
 	
 	public void setuserID(String userID)
 	{

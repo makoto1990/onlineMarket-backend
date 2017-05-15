@@ -1,4 +1,4 @@
-package main.java.com.backend.buyerEnd.search;
+package  com.backend.buyerEnd.search;
 
 
 import java.sql.Connection;
@@ -16,8 +16,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import main.java.com.backend.buyerEnd.model.Goods;
-import main.java.com.backend.defaultEnd.Dao;
+import  com.backend.buyerEnd.model.Goods;
+import  com.backend.defaultEnd.Dao;
 
 public class SearchBean {
 	public SearchBean(){
@@ -54,7 +54,7 @@ public class SearchBean {
         Session session = null;  
         try{  
             session = factory.openSession();  
-            //¿ªÆôÊÂÎñ  
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
             session.beginTransaction();  
            
             SQLQuery query = session.createSQLQuery("select distinct goodsType as a from [onlineMarket].[dbo].[Goods]");
@@ -66,17 +66,17 @@ public class SearchBean {
             	allType.add(type);	
             }
         	
-            //Ìá½»ÊÂÎñ  
+            //ï¿½á½»ï¿½ï¿½ï¿½ï¿½  
             session.getTransaction().commit();  
             
         }catch(Exception e){  
             e.printStackTrace();  
-            //»Ø¹öÊÂÎñ  
+            //ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½  
             session.getTransaction().rollback();  
         }finally{  
             if(session != null){  
                 if(session.isOpen()){  
-                    //¹Ø±Õsession  
+                    //ï¿½Ø±ï¿½session  
                     session.close();  
                 }  
             }  
@@ -92,7 +92,7 @@ public class SearchBean {
         Session session = null;  
         try{  
             session = factory.openSession();  
-            //¿ªÆôÊÂÎñ  
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
             session.beginTransaction();  
             
             String sql=null;
@@ -112,17 +112,17 @@ public class SearchBean {
             	allGoods.add(goods);	
             }
 
-            //Ìá½»ÊÂÎñ  
+            //ï¿½á½»ï¿½ï¿½ï¿½ï¿½  
             session.getTransaction().commit();  
             
         }catch(Exception e){  
             e.printStackTrace();  
-            //»Ø¹öÊÂÎñ  
+            //ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½  
             session.getTransaction().rollback();  
         }finally{  
             if(session != null){  
                 if(session.isOpen()){  
-                    //¹Ø±Õsession  
+                    //ï¿½Ø±ï¿½session  
                     session.close();  
                 }  
             }  
@@ -130,7 +130,7 @@ public class SearchBean {
         session = null;  
         try{  
             session = factory.openSession();  
-            //¿ªÆôÊÂÎñ  
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
             session.beginTransaction();  
            
             SQLQuery query;
@@ -145,15 +145,15 @@ public class SearchBean {
             	
             }     
             session.getTransaction().commit();         		       		
-            //Ìá½»ÊÂÎñ              
+            //ï¿½á½»ï¿½ï¿½ï¿½ï¿½              
         }catch(Exception e){  
             e.printStackTrace();  
-            //»Ø¹öÊÂÎñ  
+            //ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½  
             session.getTransaction().rollback();  
         }finally{  
             if(session != null){  
                 if(session.isOpen()){  
-                    //¹Ø±Õsession  
+                    //ï¿½Ø±ï¿½session  
                     session.close();  
                 }  
             }  

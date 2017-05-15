@@ -1,4 +1,4 @@
-package main.java.com.backend.defaultEnd;
+package  com.backend.defaultEnd;
 
 import java.io.IOException;
 import java.sql.Connection;

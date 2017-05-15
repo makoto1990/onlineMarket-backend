@@ -1,4 +1,4 @@
-package main.java.com.backend.sellerEnd;
+package  com.backend.sellerEnd;
 
 public class Seller {
    private String sellerID; //锟斤拷锟揭憋拷锟�

@@ -1,6 +1,6 @@
-package main.java.com.backend.buyerEnd.dao;
+package  com.backend.buyerEnd.dao;
 
-import main.java.com.backend.buyerEnd.model.User;
+import  com.backend.buyerEnd.model.User;
 import java.util.*;
 import java.sql.*;
 import java.sql.Date;

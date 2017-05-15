@@ -1,4 +1,4 @@
-package main.java.com.backend.defaultEnd;
+package  com.backend.defaultEnd;
 
 public class User {
     private String userID;//锟矫伙拷锟斤拷锟�

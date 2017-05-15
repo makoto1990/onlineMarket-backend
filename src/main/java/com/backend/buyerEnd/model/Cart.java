@@ -1,4 +1,4 @@
-package main.java.com.backend.buyerEnd.model;
+package  com.backend.buyerEnd.model;
 import java.util.*;
 
 public class Cart {

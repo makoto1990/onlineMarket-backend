@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2017-4-29 9:38:50 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="main.java.com.backend.buyerEnd.model.User" table="USER">
+    <class name=" com.backend.buyerEnd.model.User" table="USER">
         <id name="userID" type="java.lang.String" access="field">
             <column name="USERID" />
             <generator class="assigned" />

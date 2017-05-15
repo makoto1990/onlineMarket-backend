@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2017-4-29 8:55:32 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="main.java.com.backend.buyerEnd.model.Goods" table="GOODS">
+    <class name=" com.backend.buyerEnd.model.Goods" table="GOODS">
         <id name="goodsID" type="java.lang.String">
             <column name="GOODSID" />
             <generator class="assigned" />

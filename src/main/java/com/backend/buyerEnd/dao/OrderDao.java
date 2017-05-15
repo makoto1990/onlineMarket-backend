@@ -1,7 +1,7 @@
-package main.java.com.backend.buyerEnd.dao;
+package  com.backend.buyerEnd.dao;
 
-import main.java.com.backend.buyerEnd.model.Order;
-import main.java.com.backend.buyerEnd.dao.UserDao;
+import  com.backend.buyerEnd.model.Order;
+import  com.backend.buyerEnd.dao.UserDao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -25,7 +25,7 @@ public class OrderDao {
 		
 		try{
 			con = DriverManager.getConnection("jdbc:sqlserver://123.206.116.122:1433;DatabaseName=onlineMarket","sa","ECUSTJ143@software");
-			//先将username转换为userid
+			//锟饺斤拷username转锟斤拷为userid
 			String sql = "select userID from [user] where userName='"+username+"'";
 			psmt = con.prepareStatement(sql);
 			rs = psmt.executeQuery();
@@ -84,7 +84,7 @@ public class OrderDao {
 		
 		try{
 			con = DriverManager.getConnection("jdbc:sqlserver://123.206.116.122:1433;DatabaseName=onlineMarket","sa","ECUSTJ143@software");
-			//先将username转换为userid
+			//锟饺斤拷username转锟斤拷为userid
 			String sql = "select * from [user] where userName='"+username+"'";
 			psmt = con.prepareStatement(sql);
 			rs = psmt.executeQuery();

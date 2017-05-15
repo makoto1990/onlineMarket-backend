@@ -1,8 +1,8 @@
 <%@page import="org.dom4j.DocumentHelper"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<%@ page import="main.java.com.backend.buyerEnd.dao.UserDao,
-	main.java.com.backend.buyerEnd.model.User,java.util.*,org.w3c.dom.*" %>
+<%@ page import=" com.backend.buyerEnd.dao.UserDao,
+	 com.backend.buyerEnd.model.User,java.util.*,org.w3c.dom.*" %>
 	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>

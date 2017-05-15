@@ -1,4 +1,4 @@
-package main.java.com.backend.buyerEnd.model;
+package  com.backend.buyerEnd.model;
 
 public class Goods {
     private String goodsID;   //锟斤拷品锟斤拷锟�
