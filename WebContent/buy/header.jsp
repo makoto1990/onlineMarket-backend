@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" import="java.util.*" import=" com.backend.buyerEnd.model.*"
+<%@ page language="java" contentType="text/html; charset=utf-8" import="java.util.*" import="com.backend.buyerEnd.model.*"
          import="javax.servlet.http.*" pageEncoding="utf-8" %>
 
 <script>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="collapse navbar-collapse" id="example-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <jsp:useBean id="goodsTypeX" class=" com.backend.buyerEnd.search.SearchBean" />
+                                <jsp:useBean id="goodsTypeX" class="com.backend.buyerEnd.search.SearchBean" />
                                     <%  ArrayList<String> allType=new ArrayList<String>(); 
                                         allType=goodsTypeX.getAllType();
                                         int cntType=allType.size();

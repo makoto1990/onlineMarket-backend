@@ -61,7 +61,7 @@
 	<!-- 商品展示 -->
 			
     <div class="row">
-    	<jsp:useBean id="allgoods" class=" com.backend.buyerEnd.search.SearchBean" />
+    	<jsp:useBean id="allgoods" class="com.backend.buyerEnd.search.SearchBean" />
 	    	<% 	ArrayList<Goods> allGoods=new ArrayList<Goods>();
 	    		allgoods.setSearchType(3);
 	    		allgoods.setSearchinfo("123");
