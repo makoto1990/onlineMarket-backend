@@ -1,4 +1,4 @@
-package com.demo.supermarket;
+package com.backend.defaultEnd;
 
 import java.io.IOException;
 import java.sql.Connection;
